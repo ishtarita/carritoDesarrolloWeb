@@ -1,0 +1,54 @@
+.phone {
+  display: inline-block;
+  float: right;
+}
+
+.pushpin {
+  display: inline-block;
+  float: right;
+}
+
+.instagram {
+  display: inline-block;
+  float: right;
+}
+
+.menu1 {
+  display: block;
+  position: absolute;
+  list-style: none;
+  text-decoration: none;
+}
+
+.btnmenu .icon-menu {
+  padding: 20px;
+  display: block;
+  color: black;
+  float: left;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.btnmenu .icon-menu .menu1 {
+  display: block;
+  text-decoration: none;
+}
+
+.menu1 ul li {
+  text-align: center;
+}
+
+.menu1 li a:hover {
+  text-decoration: none;
+  color: mediumvioletred;
+}
+
+.icon-cart {
+  color: black;
+}
+
+.contenedorprincipal .contenedor {
+  background: peru;
+}

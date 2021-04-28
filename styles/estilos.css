@@ -1,0 +1,19 @@
+.contendormenu {
+  border: 1px;
+  border-color: grey 1px solid;
+  display: flex;
+  flex-direction: column;
+}
+body {
+  background-color: white;
+}
+
+.card-img-top {
+  width: 19rem;
+  height: 19rem;
+  object-fit: cover;
+}
+
+.card {
+  width: 19rem;
+}
