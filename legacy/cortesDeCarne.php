@@ -17,19 +17,10 @@
                     <span class="icon-menu" id="icon-menu"></span>
                 </a>
                 <br>
-                <div class="menu" id="menu">
-                    <nav><!-- se pone el menu -->
-                        <ul class="menu1" id="contenedormenu">
-                            <font face="Arial" size="4">
-                                <li><a href="proyectofinal.php">Inicio</a></li>
-                                <li><a href="entradas.php">Entradas</a></li>
-                                <li><a href="#">Cortes de carne</a></li>
-                                <li><a href="vinosYcocteles.php">Vinos y Cocteles</a></li>
-                                <li><a href="postresYbebidas.php">Postres y Bebidas</a></li>
-                            </font>
-                        </ul>
-                    </nav>
-                </div>
+                <?php 
+                include('./menuHeader.php');
+                $menu = $_GET['cat'];
+                ?>
                 <div><!--se agrega el icono -->
                     <a href="carrito.php"class="cart">
                         <span class="icon-cart">carrito</span>
@@ -40,14 +31,32 @@
 
         <div>
             <font face="Times New Roman" size="6">
-                <h1><center>Los mejores cortes de carne</h1>
+                <?php
+                switch ($menu){
+                    case 'entradas':
+                        echo "<h1><center>Entradas</h1>";
+                        $sql = "select * from inventario where tipo='entradas'";
+                        break;
+                    case 'cortes':
+                        echo "<h1><center>Los mejores cortes de carne</h1>";
+                        $sql = "select * from inventario where tipo='Cortes de carne'";
+                        break;
+                    case 'vinos':
+                        echo "<h1><center>Vinos y cócteles</h1>";
+                        $sql = "select * from inventario where tipo='vinos'";
+                        break;
+                    case 'postres':
+                        echo "<h1><center>Postres y bebidas</h1>";
+                        $sql = "select * from inventario where tipo='postres' OR 'bebidaf' OR 'bebidac'";
+                        break;
+                    }
+                ?>
             </font>
             <div class="contenedor">
                 <div>
                 <?php
                     include_once("conexion.php");
 
-                    $sql = "select * from inventario where tipo='Cortes de carne'";
                     $resultado = $conexion->query($sql);
 
                     //revisa si hay registros

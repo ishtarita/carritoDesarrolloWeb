@@ -1,6 +1,6 @@
-function mostrar(){
-    var menu = document.getElementById("menu");
-
+function mostrarCabecera(){
+    var menu = document.getElementById("menu-button");
+    console.log(menu)
     if(menu.style.display == 'block'){
         menu.style.display = 'none';
         console.log('paso if');

@@ -10,7 +10,5 @@
 	/* se comprueba si al conexion fue exitosa*/
 	if($conexion->connect_error){
 		die("conexion fallida");
-	}else{
-		echo "conexion exitosa";
 	}
 ?>

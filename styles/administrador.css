@@ -1,8 +1,12 @@
 body{
-    background: bisque;
+    background: white;
 }
 
 .admi{
     text-align: center;
-    background-color: rgb(226, 82, 111);
+}
+
+.contenido{
+    width: 45rem;
+    
 }

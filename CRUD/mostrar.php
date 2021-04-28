@@ -1,5 +1,5 @@
 <?php
-    $sql = "select * from productos";
+    $sql = "SELECT * FROM inventario";
 
     $resultado = $conexion->query($sql);
 
@@ -8,12 +8,17 @@
         //mientras haya registros los imprimira dentro de una tabla
         while($fila = $resultado->fetch_assoc()){
 		?>
+        <tbody>
+
 		    <tr>
-            <td><?php echo $fila['id'];?></td>
-			<td><?php echo $fila['nombre'];?></td>
-			<td><?php echo $fila['precio'];?></td>
-			<td><?php echo $fila['cantidad'];?></td>
-			</tr>
+            <td scope="row"><?php echo $fila['id'];?></td>
+            <td scope="row"><?php echo $fila['tipo'];?> </td>
+            <td scope="row"><?php echo $fila['nombre'];?> </td>
+            <td scope="row"><?php echo $fila['descripcion'];?> </td>
+            <td scope="row"><?php echo $fila['costo'];?> </td>
+            <td scope="row"><?php echo $fila['imagen'];?> </td>
+
+        </tbody>
 			<?php
         }
     }

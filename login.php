@@ -15,7 +15,7 @@
         <div class="container">
         <div class="row text-center login-page">
 	   <div class="col-md-12 login-form">
-	      <form action="validar.php" method="post"> 			
+	      <form action="validar.php" method="post">
 	         <div class="row">
 		    <div class="col-md-12 login-form-header">
             <center><p class="login-form-font-header"><span class="icon-user-tie"> ADMINISTRADOR</span><p>
