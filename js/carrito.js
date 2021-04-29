@@ -5,7 +5,7 @@ if (getCookie('productos')){
 var datos = cookieData ? cookieData : [];
 
 function agregarCarrito(id) {
-	alert(id);
+	alert('Se agrego al carrito!');
 	let producto = existe(id)
 	if (!producto){
 		producto = { id, cantidad:1 }
@@ -14,10 +14,16 @@ function agregarCarrito(id) {
 	}
 	else{
 		producto.cantidad += 1;
-		datos = datos.filter(producto => {return producto.id !== id});
-		datos.push(producto);
+		const foundIndex = datos.findIndex(producto => {return producto.id === id});
+    datos[foundIndex] = producto;
 		setCookie('productos', JSON.stringify(datos), 31);
 	}
+}
+
+
+function comprar(){
+	alert("Gracias por su compra");
+	deleteCookie('productos');
 }
 
 function existe(id) {
@@ -47,4 +53,10 @@ function getCookie(cname) {
     }
   }
   return "";
+}
+
+
+function deleteCookie(cname) {
+  document.cookie = cname + "=;" + 'expires=Thu, 01 Jan 1970 00:00:00 UTC' + ";path=/";
+  location.reload(true);
 }

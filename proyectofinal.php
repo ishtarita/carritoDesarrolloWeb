@@ -4,40 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COMIDA GOURMET</title><!-- titulo de la pestaña -->
-    <link rel="stylesheet" href="fonts2/style.css">
-    <link rel="stylesheet" href="styles/index.css"><!-- conexion al css -->
+    <title>Tenedor de Plata</title><!-- titulo de la pestaña -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/f5e741ea9d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
   <?php
     include ('./cabecera.php');
   ?>
-  <div class="header"> <!-- delimita el contenido de la pagina -->
+  <div class="container"> <!-- delimita el contenido de la pagina -->
     <h1><center>CORTES GOURMET</h1><br><!-- titulo de la pagina -->
     <font face="Brush Script MT" size="6"><!-- tipo de letra y tamaño -->
         <h2><center>Bienvenidos</h2><!-- subtittulo -->
     </font>
-    <div class="usertie"><!--se agrega el icono -->
-        <center><a href="login.php"class="usertie"><i class="fas fa-user-tie"></i>Administrador</a>
-        </div>
-    <div class="phone"><!-- se crea una clase y se agrega el icono -->
-    <i class="fas fa-phone"> </i> 55-55-55-55-55
+    <div><!--se agrega el icono -->
+      <a href="login.php">
+        <center><i class="fas fa-user-tie"></i> Administrador
+      </a>
     </div>
-    <div class="pushpin"><!-- se crea una clase y se agrega el icono -->
-    <i class="fas fa-map-pin"> </i> Polanco #2445 CDMX&nbsp;
+    <p><center>
+      <img src="img/carne-argentina.jpg" width="1000px" height="600px"
+    alt="Haz clic aquí para volver a la página de inicio">
+    </p>
+    <br>
+    <div><!-- se crea una clase y se agrega el icono -->
+      <i class="fas fa-phone"> </i> 55-55-55-55-55
     </div>
-    <div class="instagram"><!-- se crea una clase y se agrega el icono -->
+    <div><!-- se crea una clase y se agrega el icono -->
+      <i class="fas fa-map-pin"> </i> Polanco #2445 CDMX&nbsp;
+    </div>
+    <div><!-- se crea una clase y se agrega el icono -->
       <i class="fab fa-instagram"> </i> cortesgourmet&nbsp
     </div>
 
-
-    <p class="centrado"><center><img src="img/carne-argentina.jpg" width="1000px" height="600px"
-    alt="Haz clic aquí para volver a la página de inicio"></p><br>
   </div>
 
-    <script src="js/proyectofinal.js"></script>
 </body>
 </html>

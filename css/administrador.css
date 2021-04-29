@@ -8,5 +8,11 @@ body{
 
 .contenido{
     width: 45rem;
-    
+    margin:auto;
+}
+
+.titulo{
+
+    justify-content:center;
+    text-align: center;
 }
